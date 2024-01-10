@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamilya Continental</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="form-box">
+     <h1>Pamilya Continental</h1>
+     <div class="input-box">
+      <i class="fa fa-envelope-o"></i>
+        <input type="email" placeholder="Email ID"></input>
+     </div>
+     <div class="input-box">
+      <i class="fa fa-key"></i>
+      <input type="password" placeholder="Password" id="password">
+      <span class="eye" onclick="myFunction()"> 
+        <i class="fa fa-eye" id="hide1"></i>
+        <i class="fa fa-eye-slash"id="hide2" ></i>
+  </span>
+   </div>
+   <a href="homepage.html">
+   <button type="button" class="login-btn">LOGIN</button>
+    </a>
+  </div>   
+      <script>
+        function myFunction(){
+          var x = document.getElementById("password");
+          var y = document.getElementById("hide1");
+          var z = document.getElementById("hide2");
+
+          if(x.type === 'password'){
+              x.type = "text";
+              y.style.display = "block"; 
+              z.style.display = "none";
+          }
+          else{
+            
+              x.type = "password";
+              y.style.display = "none"; 
+              z.style.display = "block";
+          }
+
+        }
+      </script>
+  </body>
+
+    
+</html>
